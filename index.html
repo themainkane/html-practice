@@ -5,18 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About html and CSS</title>
     <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div>
       <header>
         <h1>HTML and CSS? Whats the difference?</h1>
+        <hr />
+        <br />
       </header>
-      <hr />
+      <nav class="nav_index">
+        <h3>Quick Nav</h3>
+        <ul>
+          <li>
+            <a href="#q1"
+              >What is the difference between <strong>HTML and CSS?</strong></a
+            >
+          </li>
+          <li>
+            <a href="#q2"
+              >What is the newest version of <strong>HTML?</strong></a
+            >
+          </li>
+          <li><a href="#q3">What are the top 5 most used HTML elements</a>?</li>
+          <li><a href="#q4">Have you checked out the HTML cheatsheet</a>?</li>
+          <li>
+            <a href="#q5"
+              >What is the difference between <strong>semantic</strong> and
+              <strong>non-semantic</strong> elements?</a
+            >
+          </li>
+          <li>
+            <a href="#q6"
+              >Do <strong>all browsers</strong> support the newest HTML and CSS
+              elements?</a
+            >
+          </li>
+        </ul>
+      </nav>
     </div>
     <main>
-      <div class="q_one">
+      <hr />
+      <div class="q_one" id="q1">
         <h3>What is the difference between <strong>HTML and CSS?</strong></h3>
-        <br />
         <p>
           In the broad classisifications of coding / web development, (front-end
           and back-end). <a href="">HTML</a> and <a href="">CSS</a> are both
@@ -41,6 +77,7 @@
           actual code for this website!
         </p>
         <img
+          class="double_size center"
           src="img/Screenshot 2023-09-06 135306.jpg"
           alt="a section of code between header tags"
         />
@@ -58,7 +95,7 @@
         </p>
         <hr />
       </div>
-      <div class="q_two">
+      <div class="q_two" id="q2">
         <h3>What is the newest version of <strong>HTML?</strong></h3>
         <p>
           The newest version of HTML is
@@ -74,7 +111,8 @@
           <a href="https://www.w3.org/TR/html401/">HTML4.01</a>
         </p>
       </div>
-      <div class="q_three">
+      <hr />
+      <div class="q_three" id="q3">
         <h3>What are the top 5 most used HTML elements?</h3>
         <p>
           Many HTML elements will be used over and over again, the five most
@@ -103,8 +141,9 @@
             this one!
           </li>
         </ul>
+        <hr />
       </div>
-      <div class="q_four">
+      <div class="q_four" id="q4">
         <h3>
           Have you checked out the
           <a href="https://www.wpkube.com/html5-cheat-sheet/" target="_blank"
@@ -116,7 +155,7 @@
           HTML tags in alphabetical order.
         </p>
       </div>
-      <div class="q_five">
+      <div class="q_five" id="q5">
         <h3>
           What is the difference between <strong>semantic</strong> and
           <strong>non-semantic</strong> elements?
@@ -127,7 +166,7 @@
           content of that element, even without any previous knowledge of
           coding! See if you can infer meaning from some examples below:
         </p>
-        <ul>
+        <ul class="mini_list">
           <li>&lt;header&gt;</li>
           <li>&lt;footer&gt;</li>
           <li>&lt;table&gt;</li>
@@ -140,10 +179,37 @@
           &lt;span&gt;.
         </p>
       </div>
-      <div class="q_six">
-        <h3></h3>
-        <p></p>
+      <!-- Actual question six answered in 5 and skipped -->
+      <div class="q_six" id="q6">
+        <h3>
+          Do <strong>all browsers</strong> support the newest HTML and CSS
+          elements?
+        </h3>
+        <p>
+          Put simply, no. <br />
+          Not all elements by individual browsers, this can mean that the use of
+          new elements will affect how or whether the information is displayed
+          for the client.
+        </p>
+
+        <h3><a href="https://caniuse.com/" target="_blank"></a>CanIuse.com</h3>
+        <p>
+          Can I use is website that allows you to compare the compatitbility of
+          different elements in different browsers, follow the link above to try
+          it for yourself, you should get something that looks a little like
+          this....
+        </p>
+        <img
+          class="smaller center"
+          src="img/caniuse_flexbox.jpg"
+          alt="Table showing compatitbility of flexbox with various browsers"
+        />
       </div>
     </main>
+    <footer>
+      Created by
+      <a href="https://github.com/themainkane" target="_blank">themainkane</a>,
+      day three of codining bootcamp Praha.
+    </footer>
   </body>
 </html>
